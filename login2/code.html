@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechWorld Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <nav>
-            <div class="techlogo">💻 TechWorld</div>
+            <div class="techlogo">💻TechWorld</div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -23,24 +23,26 @@
         <div class="login-box2">
             <div class="login-part">
                 <h2 class="login-text">Welcome Back!👋</h2>
-                <p>Sign in to continue to TechWorld</p>
+                <p class="sub-text">Sign in to continue to TechWorld</p>
                 <form>
                     <label for="email">Email Address</label><br>
                     <input type="email" placeholder="✉️ Enter your email" required><br><br>
                     <label for="password">Password</label><br>
                     <input type="password" placeholder="🔒 Enter your password" required><br><br>
                     <div class="options">
-                        <label for="Remember">
+                        <label for="Remember" class="remember">
                             <input type="checkbox">Remember me
                         </label>
-                        <a href="#">Forget password?</a>
+                        <a href="#" class="forget">Forget password?</a>
                     </div>
-                    <button type="submit">Login</button>
+                    <button type="submit" class="sub-button">Login</button>
                     <div class="divider">
-                        <span>or continue with</span>
+                        <span>or continue with the </span>
                     </div>
-                    <button class="google">Google</button>
-                    <button class="microsoft">Microsoft</button>
+                    <div class="social-buttons">
+                        <button class="social">Google</button>
+                        <button class="social">Microsoft</button>
+                    </div>
                     <p class="register">Don't have an account?<a href="#">Register</a></p>
                 </form>
             </div>
@@ -54,7 +56,7 @@
                 </div>
                 <h2>Secure,Simple,Smart</h2>
                 <pre>TechWorld provides secure and smart solutions
-                    for a better digital experience.
+        for a better digital experience.
                 </pre>
                 <div class="dots">
                     <span class="dot-point"></span>

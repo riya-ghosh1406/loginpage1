@@ -5,16 +5,15 @@
 }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    min-height: 100px;
-    background: linear-gradient(to bottom right,#363199,#2373F4,#22396F);
-    display:flex;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right,#3f0b7e,#2373F4,#22396F);
     justify-content: center;
     align-items: center;
     
 }
 .container{
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     background: #F5EFE1;
     margin: 100px;
     border-radius: 20px;
@@ -23,8 +22,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:20px;
-    background-color: black;
+    padding:0 20px;
+    background-color: #010736;
     height:60px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -43,7 +42,7 @@ nav{
     transition: 3sec;
 }
 .menu a:hover{
-    background-color:lightgreen;
+    background-color:#8da8ff;
     padding: 7px;
     border-radius: 5px; 
 }
@@ -54,5 +53,190 @@ nav{
 }
 .login-box2{
     display: flex;
-    gap: 150px;
+    min-height: 600px;
+    border-radius: 20px;
+}
+.login-part{
+    width: 49.5%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 0 20px;
+}
+.login-part h2{
+    color: #22396F;
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-align: center;
+}
+.sub-text{
+    font-size: 13px;
+    text-align: center;
+}
+form{
+    width: 100%;
+}
+label{
+    color: #3f0b7e;
+    display:block;
+    font-size: 17px;
+    margin-top: 10px;
+}
+input[type="email"],
+input[type="password"]{
+    width: 100%;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 13px;
+    transition: 0.3s;
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+    box-shadow: 0 0 0 2px rgba(85, 116, 70, 0.5);
+}
+input::placeholder{
+    color:#757D6F;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    font-size: 8px;
+}
+.remember{
+    padding-bottom: 5px;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+}
+.options a{
+    text-decoration: none;
+    font-weight: 500;
+}
+.options a:hover{
+    text-decoration: underline;
+}
+.sub-button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(90deg,green,darkgreen);
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.forget{
+    font-size: 10px;
+}
+.sub-button:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(75, 70, 220, 0.3);
+}
+.divider{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 20px 0 16px;
+    font-size: 12px;
+}
+.divider::before,
+.divider::after{
+    content: "";
+    height: 1px;
+    background-color: white;
+    flex: 1;
+}
+.divider span{
+    white-space: nowrap;
+}
+.social-buttons{
+    display: flex;
+
+}
+.social{
+    width: 50%;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.social:hover{
+    background: green;
+}
+.register{
+    text-align: center;
+    margin-top: 22px;
+    font-size: 8px;
+}
+.register a{
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.register a:hover{
+    text-decoration: underline;
+}
+
+.Welcome-part{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+
+}
+.computerLock-image{
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+    box-shadow: 0 12px 25px rgba(90,70,220,0.25);
+}
+.Welcome-part h2{
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #F5EFE1;
+}
+.Welcome-part pre{
+    max-width: 250px;
+    font-size: 10px;
+    line-height: 1.7;
+    color: white;
+
+}
+.dots{
+    display: flex;
+    gap: 7px;
+    margin-top: 28px;
+
+}
+.dots-span{
+    width: 9px;
+    height: 9px;
+    background: #d1cef0;
+    border-radius: 50%;
+
+}
+.dots .dot-point{
+    width: 18px;
+    border-radius: 5px;
+    background: #6749e8;
+}
+footer{
+    text-align: center;
+    color: #F5EFE1;
 }
